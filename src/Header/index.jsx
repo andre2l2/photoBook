@@ -1,16 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import ArrowIcon from './arrow.svg'
 import './style.css';
 
-function Header() {
+function Header({ item, value }) {
     return (
         <header>
             <div className="logo"></div>
             <div className="arrow">
-                <Link to="/galery">
-                    <img src={ArrowIcon} alt="Arrow"/>
+                <Link to={ value }>
+                    <img src={ item } alt="Arrow"/>
                 </Link>
             </div>
         </header>

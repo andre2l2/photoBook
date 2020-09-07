@@ -11,7 +11,7 @@ ReactDOM.render(
       <Route path="/galery" exact>
         <Galery />
       </Route>
-      <Route path="/" exact>
+      <Route path="/">
         <HomePage />
       </Route>
     </Switch>
